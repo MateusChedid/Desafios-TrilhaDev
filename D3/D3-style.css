@@ -150,3 +150,15 @@ li{
 
 }
 
+@media (max-height:700px) {
+    h1,h2{
+        font-size: 30px;
+    }
+    .cima{
+        height: 60%;
+
+    }
+
+}
+
+
