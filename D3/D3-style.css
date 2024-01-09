@@ -1,0 +1,147 @@
+
+body, html{
+   font-family: 'Source Serif 4', serif;   
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   background-color: #9B6647;
+}
+
+
+.cima {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEECE0;
+    height: 50%;
+    box-sizing: border-box; 
+}
+
+.baixo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    height: 50%;
+    box-sizing: border-box; 
+
+}
+
+.conteudo_cima,
+.conteudo_baixo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.conteudo_cima img{
+    width: 409px;
+    height: 293px;
+}
+
+.texto_pamonha, .conteudo_cima img{
+    margin: 0 30px;
+}
+
+.porções{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.porções p, .porções button{
+    color: #9B6647;
+    margin-right: 10px;
+}
+
+button{
+    background: none;
+    border: 2px solid;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+button:hover{
+    color: #462e20;
+    cursor: pointer;
+
+}
+h1{
+    margin: 0;
+    font-size: 72px;
+    color: #58190A;
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+    color: #58190A;
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+.conteudo_esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.conteudo_direita{
+    margin-left: 50px;
+}
+
+.titulo{
+    color: #FEECE0;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+ul{
+    margin: 0;
+    padding: 20px;
+}
+li{
+    color: #FEECE0;
+    font-size: 28px;
+}
+
+.titulo h2{
+    margin: 0;
+}
+
+@media (max-width:900px) {
+    .conteudo_cima,
+    .conteudo_baixo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%; 
+      width: 100%;
+    }
+    .conteudo_cima img{
+        width: 203px;
+        height: 143px;
+    }
+    .conteudo_direita{
+        margin-left: 0;
+    }
+    .conteudo_esquerda{
+        margin-left: 10%;
+    }
+
+    .baixo{
+        margin-left: 0;
+    }
+
+}

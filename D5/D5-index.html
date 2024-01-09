@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="D5-app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="D5-cartao_adicionado.html" class="container">
+        <div class="card_all">
+            <div class="info">
+                <div class="cardNumber">
+                    <h1>Número do cartão</h1>
+                    <input
+                    class="input_num"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="cc-number"
+                    maxlength="16"
+                    placeholder="xxxx xxxx xxxx xxxx"
+                    />
+                </div>
+                <div class = titularName>
+                    <h1>Nome do títular</h1>
+                    <input class="input_nome" 
+                    type="text" 
+                    placeholder="Nome como está no cartão"
+                    maxlength="26"
+                    />
+                </div>
+                <div class = validadeCVV>
+                    <div class="expire">
+                        <h1>Validade</h1>
+                        <input class="input_val"  
+                        type="text" 
+                        placeholder="mm/aa"
+                        maxlength="4"
+                        />
+                    </div>
+                    <div class="CVV">
+                        <h1>CVV</h1>
+                        <input class="input_cvv"
+                         type="text" 
+                         maxlength="3"
+                         placeholder="***">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <img src="cartao_front.png" id="card_png">
+                    <h3 class="num_dinamicos"> ****  ****  ****  ****</h3>
+                    <h3 class="nome_dinamico"> Seu nome aqui</h3>
+                    <h3 class="val_dinamica"> ** / **</h3>
+                    
+                </div>
+                <div class = "legenda"> 
+                    <img src="check.png" id="check_png">
+                    <h1>Seus dados estão seguros</h1>
+                </div>
+                
+            </div>
+        </div>
+        <button>Adicionar cartão</button>
+    </form>
+
+    <script src="D5-script.js"></script>
+</body>
+</html>

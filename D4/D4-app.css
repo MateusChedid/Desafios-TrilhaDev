@@ -1,0 +1,210 @@
+body, html{
+    font-family: 'Titillium Web', sans-serif;    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.metade1{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 90px;
+}
+
+.infos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text{
+    width: 22em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a{
+    color: #7C3AED;;
+    cursor: pointer; 
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#insc{
+    font-weight: bold;
+
+}
+.metade2{
+    height: 100%;
+    width: 35%;
+    background-image: url("img.png");
+
+}
+
+.logo img{
+    width: 159.5px;
+    height: 54px;
+}
+
+input{
+    font-family: 'Titillium Web', sans-serif;    
+    width: 25em;
+    height: 3em;
+    margin: 2px;
+    border: 2px solid #7E8D9A;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.senha_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;    
+    width: 21em;
+    height: 3em;
+    margin: 2px;
+    border: 2px solid #7E8D9A;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.senha_container img{
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+    cursor: pointer;
+
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.username{
+    height: 46px;
+
+}
+
+.password{
+    padding: 0;
+    margin-left: 0;
+    border: none;
+    outline: none;
+    width: 22em;
+
+}
+
+.senhaEsqueceu{
+    width: 22em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: #C3CFD9;
+
+}
+
+button{
+    height: 3em;
+    background-color: #7C3AED ;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;    
+    border: none;
+    border-radius: 3px;
+    margin-top: 2em;
+    width: 22em;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover{
+    transition: all 0.25s;
+    background-color: #561bbb ;
+    cursor: pointer;
+}
+
+.error-email, .error-password{
+    font-family: 'Titillium Web', sans-serif;    
+    color : #b0332a;
+    font-size : 1em;
+    margin : 0;
+}
+
+ @media (max-width:850px) {
+    .metade2{
+        display: none;
+    
+    }
+    body, html{
+        justify-content: flex-start;
+    
+    }
+
+    .text{
+        width: 18em;
+    }
+
+    .inputs{
+        width: 18em;
+    }
+
+    .username{
+        width: 21.4em;
+    }
+
+    .senhaInputs, .senhaEsqueceu, .senha_container{
+        width: 18em;
+    }
+
+    button{
+        width: 19em;
+    }
+
+ }
