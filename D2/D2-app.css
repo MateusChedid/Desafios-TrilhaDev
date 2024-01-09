@@ -84,5 +84,8 @@ html,body{
     }
     body{
         margin: 0px
+    }   
+    .musica{
+        width: 80%;
     }
 }
